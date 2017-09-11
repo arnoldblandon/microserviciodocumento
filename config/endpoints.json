@@ -1,0 +1,16 @@
+{
+
+  "develop": {
+    "notificationOrchestrator": {
+      "host": "http://localhost",
+      "port": 4990,
+      "auctionsUpdated": "/auctionsUpdated"
+    },
+    "topdf": {
+      "host": "http://localhost",
+      "port": 13050,
+      "urlToPDF": "/htmlToPdf"
+    }
+
+  }
+}
