@@ -80,7 +80,7 @@ para realizar peticiones, abrir postman y seleccionar POST y en la URL poner la 
 
 - ir a body, seleccionar "raw" y donde dice "text" seleccionar JSON(application/json), y pegar los siguientes parámetros..
 
-{ 
+-{ 
 "name":"recibe string, primer nombre",
 "secondName":"recibe string, segundo nombre",
 "lastName":"recibe string, primer apellido",
@@ -100,8 +100,7 @@ para realizar peticiones, abrir postman y seleccionar POST y en la URL poner la 
  ----------------------------------------------------------------------------------------------------------------------------------
 EJEMPLO DE PTECIÓN A
 POST http://127.0.0.1:5000/ver_contrato
-
-{ 
+-{ 
 "name":"Juan",
 "secondName":"Camilo",
 "lastName":"Palacios",
