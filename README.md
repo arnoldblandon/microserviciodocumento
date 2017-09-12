@@ -79,7 +79,7 @@ URLs
 para realizar peticiones, abrir postman y seleccionar POST y en la URL poner la url a la cual quiere apuntar, ir a Headers y en  Content-Type seleccionar application/json.
 
 - ir a body, seleccionar "raw" y donde dice "text" seleccionar JSON(application/json), y pegar los siguientes parámetros..
-
+*
 -{ 
 "name":"recibe string, primer nombre",
 "secondName":"recibe string, segundo nombre",
@@ -97,10 +97,11 @@ para realizar peticiones, abrir postman y seleccionar POST y en la URL poner la 
 "ano":"recibe entero,",
 "hora":"recibe string,".
 }
+*
  ----------------------------------------------------------------------------------------------------------------------------------
 EJEMPLO DE PTECIÓN A
 POST http://127.0.0.1:5000/ver_contrato
--{ 
+{ 
 	"name":"ESTEBAN",
 	"secondName":"SAMUEL",
 	"lastName":"KK",
