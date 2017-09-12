@@ -87,7 +87,7 @@ para realizar peticiones, abrir postman y seleccionar POST y en la URL poner la 
 "secondLastName":"recibe string, segundo apellido",
 "addressCity":"recibe string, direccion",
 "document":recibe entero, 222222,
-"documentCity:"recibe string, ciudad del documento,
+"documentCity":"recibe string, ciudad del documento",
 "contrato":"recibe string,aquí va el contrato el cual se desea renderizar, ejemplo (contrato1.html)",
 "entityName":"recibe string, nombre de la entidad",
 "entityDocument":"recibe entero, documento de la entidad",
@@ -107,15 +107,15 @@ POST http://127.0.0.1:5000/ver_contrato
 "secondLastName":"Ortiz",
 "addressCity":"Calle 32B # 34-23",
 "document":222222222,
-"documentCity:"Bogotá,
+"documentCity":"Bogotá,
 "contrato":"contrato1.html",
 "entityName":"EMPRESA CAM",
 "entityDocument":11111111111,
 "chambersCommerce":323232,
 "dia":2,
-"mes:"enero",
+"mes":"enero",
 "ano":2017,
-"hora":4:20 PM".
+"hora":"4:20 PM".
 }
 
 
