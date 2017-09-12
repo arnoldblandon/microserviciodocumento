@@ -115,7 +115,7 @@ POST http://127.0.0.1:5000/ver_contrato
 "dia":2,
 "mes":"enero",
 "ano":2017,
-"hora":"4:20 PM".
+"hora":"4:20 PM"
 }
 
 
