@@ -23,17 +23,17 @@ ENTORNO VIRTUAL EN WINDOWS
  - 1 - abrir cmd y dirigirse al lugar donde quieran crear el entorno virtual, para este ejemplo se creará entorno llamado "mi_proyecto" en el escritorio. Pasos.. EJECUTAR COMANDOS
 - 1.1 -> cd Desktop
 - 1.2 -> mkdir mi_proyecto
-1.3 -> cd mi_proyecto
-1.4 -> virtualenv .
-ya tendrá el entorno virtual instalado, para acivarlo ejecute.
-1.5 ->Scripts\activate
-ya tendrá el entorno activado si en la linea de la consola empieza por "(mi_proyecto)"
+- 1.3 -> cd mi_proyecto
+- 1.4 -> virtualenv .
+- ya tendrá el entorno virtual instalado, para acivarlo ejecute.
+- 1.5 ->Scripts\activate
+- ya tendrá el entorno activado si en la linea de la consola empieza por "(mi_proyecto)"
 
 ENTORNO VIRTUAL EN LINUX 
-1 - abrir terminal y dirigirse al lugar donde quieran crear el entorno virtual, para este ejemplo se creará entorno llamado "mi_proyecto" en  el escritorio. Pasos.. EJECUTAR COMANDOS
+- 1 - abrir terminal y dirigirse al lugar donde quieran crear el entorno virtual, para este ejemplo se creará entorno llamado "mi_proyecto" en  el escritorio. Pasos.. EJECUTAR COMANDOS
 
-1.1 --> cd Escritorio (puede ser Desktop)
-1.2 -> mkdir mi_proyecto
+- 1.1 --> cd Escritorio (puede ser Desktop)
+- 1.2 -> mkdir mi_proyecto
 
 
 ----------------------------------------------------------------------------------------------------------------------------------
