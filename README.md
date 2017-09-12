@@ -13,6 +13,7 @@ DEPENDENCIAS
 - flask 0.12.2 (correr y exponer la API)
 - request (la librería de python)
 - microservicio htmlToPDF ( Microservicio que convierte html a pdf)
+- instalar postman para realizar peticiones 
 
 ----------------------------------------------------------------------------------------------------------------------------------
 ENTORNO VIRTUAL
@@ -50,7 +51,75 @@ Una vez se tiene el entorno activado, podrás instalar las respectivas dependenc
 - pip install flask==0.12.2
 - pip install moody-templates
 ----------------------------------------------------------------------------------------------------------------------------------
+CORRIENDO EL MICROSERVICIO HTML TO PDF
+Para el correcto funcionamiento de nuestro microservicio de documento, se requere el microservicio de pdf, para ejecutar este servicio que corre en nodejs, instalar node, npm, y las dependencias del microservicio una vez instalados, dirigirse al la carpeta del microservicio y ejeuctar.
+- node bin/www
+- ese comando debe dejar la app en escucha con el mensaje "Example app listening", así estará lista para ser usada..
+
+----------------------------------------------------------------------------------------------------------------------------------
+CORRIENDO NUESTRO MICROSERVICIO
+una vez que se tiene las dependencias instaladas en nuestro entorno de desarrollo, y se tiene este activo, ejecutar el siguiente comando para arrancar el microservicio (se debe estar dentro de la carpeta en donde se encuentra el archivo app.py).
+- python app.py
+debería estar viendo en la última linea, este mensaje
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ a esa URL se le harán las peticiones..
+ 
+ ----------------------------------------------------------------------------------------------------------------------------------
+PETICIONES
+La API expone dos URLs, las dos esperan recibir parámetros vía POST
+
+- /ver_contrato
+- /aprobar_contrato
+
+URLs
+- http://127.0.0.1:5000/ver_contrato
+- http://127.0.0.1:5000/aprobar_contrato
+
+
+para realizar peticiones, abrir postman y seleccionar POST y en la URL poner la url a la cual quiere apuntar, ir a Headers y en  Content-Type seleccionar application/json.
+
+- ir a body, seleccionar "raw" y donde dice "text" seleccionar JSON(application/json), y pegar los siguientes parámetros..
+
+{ 
+"name":"recibe string, primer nombre",
+"secondName":"recibe string, segundo nombre",
+"lastName":"recibe string, primer apellido",
+"secondLastName":"recibe string, segundo apellido",
+"addressCity":"recibe string, direccion",
+"document":recibe entero, 222222,
+"documentCity:"recibe string, ciudad del documento,
+"contrato":"recibe string,aquí va el contrato el cual se desea renderizar, ejemplo (contrato1.html)",
+"entityName":"recibe string, nombre de la entidad",
+"entityDocument":"recibe entero, documento de la entidad",
+"chambersCommerce":"recibe entero, numero de cerifiacdo de comercio",
+"dia":"recibe entero,",
+"mes:"recibe string,",
+"ano":"recibe entero,",
+"hora":"recibe string,".
+}
+ ----------------------------------------------------------------------------------------------------------------------------------
+EJEMPLO DE PTECIÓN A
+POST http://127.0.0.1:5000/ver_contrato
+
+{ 
+"name":"Juan",
+"secondName":"Camilo",
+"lastName":"Palacios",
+"secondLastName":"Ortiz",
+"addressCity":"Calle 32B # 34-23",
+"document":222222222,
+"documentCity:"Bogotá,
+"contrato":"contrato1.html",
+"entityName":"EMPRESA CAM",
+"entityDocument":11111111111,
+"chambersCommerce":323232,
+"dia":2,
+"mes:"enero",
+"ano":2017,
+"hora":4:20 PM".
+}
 
 
 
+ 
 
