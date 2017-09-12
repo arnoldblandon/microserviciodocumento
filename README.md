@@ -101,21 +101,21 @@ para realizar peticiones, abrir postman y seleccionar POST y en la URL poner la 
 EJEMPLO DE PTECIÓN A
 POST http://127.0.0.1:5000/ver_contrato
 -{ 
-"name":"Juan",
-"secondName":"Camilo",
-"lastName":"Palacios",
-"secondLastName":"Ortiz",
-"addressCity":"Calle 32B # 34-23",
-"document":222222222,
-"documentCity":"Bogotá,
-"contrato":"contrato1.html",
-"entityName":"EMPRESA CAM",
-"entityDocument":11111111111,
-"chambersCommerce":323232,
-"dia":2,
-"mes":"enero",
-"ano":2017,
-"hora":"4:20 PM"
+	"name":"ESTEBAN",
+	"secondName":"SAMUEL",
+	"lastName":"KK",
+	"secondLastName":"Palacios",
+	"addressCity":"El NORTE",
+	"document":103234540,
+	"documentCity":"italia",
+	"contrato":"contrato10.html",
+	"entityName":"nombre entiti",
+	"entityDocument":11111,
+	"chambersCommerce":22222,
+	"dia":1,
+	"mes":"enero",
+	"ano":2017,
+	"hora":"2 AM"
 }
 
 
