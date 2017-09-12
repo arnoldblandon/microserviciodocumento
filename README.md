@@ -30,16 +30,25 @@ ENTORNO VIRTUAL EN WINDOWS
 - ya tendrá el entorno activado si en la linea de la consola empieza por "(mi_proyecto)"
 
 ENTORNO VIRTUAL EN LINUX 
-- 1 - abrir terminal y dirigirse al lugar donde quieran crear el entorno virtual, para este ejemplo se creará entorno llamado "mi_proyecto" en  el escritorio. Pasos.. EJECUTAR COMANDOS
+para este ejemplo se creará entorno llamado "mi_proyecto" en el escritorio. Pasos.. EJECUTAR COMANDOS
 
-- 1.1 --> cd Escritorio (puede ser Desktop)
-- 1.2 -> mkdir mi_proyecto
-
+- 1  abrir terminal y ejecutar  sudo apt-get install python3-pip 
+- 1.2 luego sudo pip3 install virtualenv
+- 1.3 cd Escritorio
+- 1.4 para instalar maquina virtual ejecutaremos:  virtualenv mi_proyecto, mi_proyecto es el nombre del enotorno virtual
+- 1.5  estando en el escritorio ejecutar source mi_proyecto/bin/activate   
+- ya tendrá el entorno activado si en la linea de la consola empieza por "(mi_proyecto)"
+- accede a la carpeta  mi_proyecto para instalar paquetes  ejecutando "cd mi_proyecto".
 
 ----------------------------------------------------------------------------------------------------------------------------------
-INSTALACIÓN DE DEPENDENCIAS|
-Para instalar cada dependencia ejecute
-pip
+INSTALACIÓN DE DEPENDENCIAS
+Una vez se tiene el entorno activado, podrás instalar las respectivas dependencias, para ello ejecutar..
+
+- pip install python==3.5.2
+- pip install mongoengine
+- pip install azure
+- pip install flask==0.12.2
+- pip install moody-templates
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
