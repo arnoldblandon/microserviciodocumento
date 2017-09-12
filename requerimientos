@@ -1,15 +1,19 @@
 *Se instalaron las últimas versiones a 08/09/2017 (Si no tiene versión especificada)
+* para instalar cada paquete correr pip install nombre_paquete == versión.
 
 Python == 3.5.2
-mongoengine
-azure
-uuid
-flask = 0.12.2
-moody-templates
-microservidor htmlToPDF
 
-para instalar cada paquete correr pip install nombre_paquete == versión.
+pip install mongoengine
+
+pip install azure
+
+uuid (librería de python)
+
+fpip install flask = 0.12.2
+
+pip install  moody-templates
+
+microservidor htmlToPDF (microservicio al cual se le envía el html para convertirlo en pdf)
+requests (librería de python)
 
 
-en el archivo utlis.py se encuentra la lógica de la aplicación
-Carpeta config, archivo config.py se

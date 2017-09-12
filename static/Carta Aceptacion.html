@@ -1,0 +1,205 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+	</head>
+	<body>
+		<p align="justify">
+		    Bogotá D.C., {{:day}}/{{:month}}/{{:year}}
+		</p>
+		<p align="justify">
+		    Señor
+		</p>
+		<p align="justify">
+		    {{:sellerEntityName}}, {{:sellerEntityDocument}}
+		</p>
+		<p align="justify">
+		    I.D.
+		</p>
+		<p align="justify">
+		    Asunto: Aceptación de la(s) Factura(s) No.__________________
+		</p>
+		<p align="justify">
+		    Por medio de la presente, para todos los efectos y en concordancia con lo establecido por el artículo 773 del Código de Comercio colombiano, me permito
+		    informar que acepto de manera expresa el contenido de la(s) Factura(s) mencionada(s) en el asunto, emitida(s) por ______________________________, en atención a los
+		    servicios y/o bienes de los cuales he sido satisfactoriamente beneficiado. Respecto a dichos bienes y/o servicios, declaro que fueron aceptados y que no
+		    realizaré reclamaciones o devoluciones que puedan afectar el valor de la(s) Factura(s) mencionada(s) en el asunto.
+		</p>
+		<p align="justify">
+		    Así mismo, entiendo y acepto que la totalidad del valor de la(s) Factura(s) mencionada(s) en el asunto, debo pagarla a la(s) persona(s) que compre(n) la(s)
+		    misma(s) a través de la PLATAFORMA MFX, que funciona a través del sitio web <a href="http://www.mesfix.com">www.mesfix.com</a>. Además, asumo la obligación
+		    de efectuar el pago del valor de la(s) Factura(s) mencionada(s) en el asunto en el día __ de __ de 20__, a través del medio de pago señalado por los compradores/inversionistas, ya sea en la PLATAFORMA MFX o mediante el link de pago que se remita desde    <a href="mailto:notificaciones@mesfix.com">notificaciones@mesfix.com</a> o cualquier otro correo electrónico con dominio @mesfix.com, a mi correo electrónico.
+		</p>
+		<p align="justify">
+		    <u>Descripción de las facturas negociadas</u>
+		</p>
+		<table align="center" width="604" cellpadding="7" cellspacing="0" border="1">
+		    <colgroup>
+		        <col width="55"/>
+		        <col width="67"/>
+		        <col width="59"/>
+		        <col width="57"/>
+		        <col width="57"/>
+		        <col width="57"/>
+		        <col width="72"/>
+		        <col width="67"/>
+		    </colgroup>
+		    <tbody>
+		        <tr valign="top">
+		            <td width="55">
+		                <p align="justify">
+		                    <strong>No. Factura</strong>
+		                </p>
+		            </td>
+		            <td width="67">
+		                <p align="justify">
+		                    <strong>Valor Bruto</strong>
+		                </p>
+		            </td>
+		            <td width="59">
+		                <p align="justify">
+		                    <strong>IVA</strong>
+		                </p>
+		            </td>
+		            <td width="57">
+		                <p align="justify">
+		                    <strong>RteFte</strong>
+		                </p>
+		            </td>
+		            <td width="57">
+		                <p align="justify">
+		                    <strong>RteIVA</strong>
+		                </p>
+		            </td>
+		            <td width="57">
+		                <p align="justify">
+		                    <strong>RteICA</strong>
+		                </p>
+		            </td>
+		            <td width="72">
+		                <p align="justify">
+		                    <strong>Otras retenciones</strong>
+		                </p>
+		            </td>
+		            <td width="67">
+		                <p align="justify">
+		                    <strong>Valor Neto</strong>
+		                </p>
+		            </td>
+		        </tr>
+		       	{{for invoices}}
+			        <tr valign="top">
+			            <td width="55">
+			                <p align="justify">
+			                    {{:invoiceNumber}}
+			                </p>
+			            </td>
+			            <td width="67">
+			                <p align="justify">
+			                    {{:grossValue}}
+			                </p>
+			            </td>
+			            <td width="59">
+			                <p align="justify">
+			                    {{:valueAddedTax}}
+			                </p>
+			            </td>
+			            <td width="57">
+			                <p align="justify">
+			                    {{:withholdingSource}}
+			                </p>
+			            </td>
+			            <td width="57">
+			                <p align="justify">
+			                    {{:withholdingValueAddedTax}}
+			                </p>
+			            </td>
+			            <td width="57">
+			                <p align="justify">
+			                    {{:withholdingIndustryCommerceTax}}
+			                </p>
+			            </td>
+			            <td width="72">
+			                <p align="justify">
+			                    {{:otherTaxes}}
+			                </p>
+			            </td>
+			            <td width="67">
+			                <p align="justify">
+			                    {{:netValue}}
+			                </p>
+			            </td>
+			        </tr>
+			    {{/for}}
+		        <tr valign="top">
+		            <td width="55">
+		                <p align="justify">
+		                    <strong>TOTAL</strong>
+		                </p>
+		            </td>
+		            <td width="67">
+		                <p align="justify">
+		                    {{:total_grossValue}}
+		                </p>
+		            </td>
+		            <td width="59">
+		                <p align="justify">
+		                    {{:total_valueAddedTax}}
+		                </p>
+		            </td>
+		            <td width="57">
+		                <p align="justify">
+		                    {{:total_withholdingSource}}
+		                </p>
+		            </td>
+		            <td width="57">
+		                <p align="justify">
+		                    {{:total_withholdingValueAddedTax}}
+		                </p>
+		            </td>
+		            <td width="57">
+		                <p align="justify">
+		                    {{:total_withholdingIndustryCommerceTax}}
+		                </p>
+		            </td>
+		            <td width="72">
+		                <p align="justify">
+		                    {{:total_otherTaxes}}
+		                </p>
+		            </td>
+		            <td width="67">
+		                <p align="justify">
+		                    {{:total_net_value}}
+		                </p>
+		            </td>
+		        </tr>
+		    </tbody>
+		</table>
+		<p align="justify">
+		    De igual manera, autorizo de manera expresa a la sociedad PTG Abogados S.A.S., identificada con NIT No. 900.859.943-2, para que, al momento en que se
+		    realice el pago de la(s) Factura(s) mencionada(s) en el asunto, proceda a la destrucción física respectiva del título valor sobre el que quedará soporte digital para cualquier efecto.
+		</p>
+		<p align="justify">
+		    Por último, declaro que, sobre la(s) Factura(s) mencionada(s) en el asunto, no ha cursado ni cursa algún proceso judicial, así como tampoco se ha pagado algún anticipo de su valor.
+		</p>
+		<p align="justify">
+		    Atentamente,
+		</p>
+		<p align="justify">
+		    Nombre:
+		</p>
+		<p align="justify">
+		    Cargo:
+		</p>
+		<p align="justify">
+		    Empresa:
+		</p>
+		<p align="justify">
+		    <a name="_GoBack"></a>
+		    Dirección:
+		</p>
+		<p align="justify">
+		    Teléfono:
+</p>
+
+	</body>
+</html>

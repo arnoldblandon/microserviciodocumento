@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'/>
+    <title>Carta de Endoso</title>
+</head>
+<body>
+    <p align="center">
+        <strong>ESTE DOCUMENTO HACE PARTE INTEGRANTE DE LA FACTURA No. </strong>
+    {{:invoices[index_invoice].invoiceNumber}}<strong> emitida el día </strong><strong>{{:day}}/{{:month}}/{{:year}}</strong><strong> por </strong><strong>{{:sellerEntityName}} </strong><strong>identificado con Nit </strong><strong>{{:sellerEntityDocument}}</strong><strong> cuyo ACEPTANTE es ­</strong><strong>{{:payerEntityName}}</strong>    <strong> identificado con Nit </strong><strong>{{:payerEntityDocument}}</strong><strong>.</strong>
+    </p>
+    <p>
+        <a name="_GoBack"></a>
+        <br/>
+        <br/>
+    </p>
+    <p>
+        <strong>Asunto:</strong>
+        Endoso de la FACTURA No.{{:invoices[index_invoice].invoiceNumber}}
+    </p>
+    <p align="justify">
+        El día de hoy {{:day}} del mes de {{:month}} del año {{:year}}, en mi calidad de emisor y propietario de la FACTURA No. {{:invoices[index_invoice].invoiceNumber}}, para todos los efectos me permito
+        endosar en propiedad y con responsabilidad de mi parte a favor de las personas que se señalan en la lista de endosatarios, contenida en la página 2 de este
+        documento:
+    </p>
+    <p align="justify">
+        Firma
+    </p>
+    <p align="justify">
+        ________________________
+    </p>
+    <p align="justify">
+        Nombre:
+    </p>
+    <p align="justify">
+        Representante Legal
+    </p>
+    <p align="justify">
+        {{:sellerEntityName}}
+    </p>
+    <p align="justify">
+        NIT/CC : {{:sellerEntityDocument}}
+    </p>
+    <p align="justify">
+        <strong>Asunto:</strong>
+        Aval de la FACTURA No. {{:invoices[index_invoice].invoiceNumber}}
+    </p>
+    <p align="justify">
+        El día de hoy {{:day}} del mes de {{:month}} del año {{:year}}, me constituyo como avalista solidario para el pago de la FACTURA No. {{:invoices[index_invoice].invoiceNumber}}.
+    </p>
+    <p align="justify">
+        Firma
+    </p>
+    <p align="justify">
+        _____________________________
+    </p>
+    <p align="justify">
+        Nombre:______________________
+    </p>
+    <p align="justify">
+        CC. :__________________________
+    </p>
+    <p align="justify">
+        Firma
+    </p>
+    <p align="justify">
+        _____________________________
+    </p>
+    <p align="justify">
+        Nombre:______________________
+    </p>
+    <p align="justify">
+        CC. :__________________________
+    </p>
+</body>
+</html>

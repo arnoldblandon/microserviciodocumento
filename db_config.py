@@ -1,4 +1,5 @@
 from mongoengine import *  # Base de datos
+#nombre de la base de datos
 connect('users_links', host="localhost",port=27017)
 
 class Link(Document):
