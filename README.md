@@ -15,7 +15,7 @@ DEPENDENCIAS
 - microservicio htmlToPDF ( Microservicio que convierte html a pdf)
 
 ----------------------------------------------------------------------------------------------------------------------------------
-ENTORNO VIRTUAL|
+ENTORNO VIRTUAL
 
 Se recomienda crear un entorno virtual el cual permitirá instalar paquetes sin afectar a la versión del mismo que el pc tiene por defecto.
 
@@ -28,7 +28,7 @@ ENTORNO VIRTUAL EN WINDOWS
 - ya tendrá el entorno virtual instalado, para acivarlo ejecute.
 - 1.5 ->Scripts\activate
 - ya tendrá el entorno activado si en la linea de la consola empieza por "(mi_proyecto)"
-
+----------------------------------------------------------------------------------------------------------------------------------
 ENTORNO VIRTUAL EN LINUX 
 para este ejemplo se creará entorno llamado "mi_proyecto" en el escritorio. Pasos.. EJECUTAR COMANDOS
 
@@ -49,7 +49,6 @@ Una vez se tiene el entorno activado, podrás instalar las respectivas dependenc
 - pip install azure
 - pip install flask==0.12.2
 - pip install moody-templates
-
 ----------------------------------------------------------------------------------------------------------------------------------
 
 
