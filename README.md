@@ -93,16 +93,17 @@ para realizar peticiones, abrir postman y seleccionar POST y en la URL poner la 
         "entityName":"recibe string, nombre de la entidad",
         "entityDocument":"recibe entero, documento de la entidad",
         "chambersCommerce":"recibe entero, numero de cerifiacdo de comercio",
-        "dia":"recibe entero,",
-        "mes:"recibe string,",
-        "ano":"recibe entero,",
-        "hora":"recibe string"
+        "dia":"recibe_entero",
+        "mes:"recibe string",
+        "ano":"recibe_entero",
+        "hora":"recibe_string"
 }
 
 ```
 NOTA: si la plantilla a renderizar no contiene las variables que se le envían, estos no serán renderizados, así se envíen, se puede enviar estos parámetros vacíos si prefiere.
  ----------------------------------------------------------------------------------------------------------------------------------
 - EJEMPLO DE PTECIÓN A POST http://127.0.0.1:5000/ver_contrato
+```json
 { 
 	"name":"ESTEBAN",
 	"secondName":"SAMUEL",
@@ -120,6 +121,7 @@ NOTA: si la plantilla a renderizar no contiene las variables que se le envían, 
 	"ano":2017,
 	"hora":"2 AM"
 }
+```
 
 -PETICIONES A http://127.0.0.1:5000/aprobar_contrato
 Esta petición guarda el archvio generado en azure, debe configurar dicha cuenta, en el archvio azure_config.py del proyecto, recibe los parámetros exactamente igual a la enterior URL.
