@@ -65,7 +65,7 @@ debería estar viendo en la última linea, este mensaje
  a esa URL se le harán las peticiones..
  
  ----------------------------------------------------------------------------------------------------------------------------------
-PETICIONES
+- PETICIONES
 La API expone dos URLs, las dos esperan recibir parámetros vía POST
 
 - /ver_contrato
@@ -79,25 +79,26 @@ URLs
 para realizar peticiones, abrir postman y seleccionar POST y en la URL poner la url a la cual quiere apuntar, ir a Headers y en  Content-Type seleccionar application/json.
 
 - ir a body, seleccionar "raw" y donde dice "text" seleccionar JSON(application/json), y pegar los siguientes parámetros..
-*
--{ 
-"name":"recibe string, primer nombre",
-"secondName":"recibe string, segundo nombre",
-"lastName":"recibe string, primer apellido",
-"secondLastName":"recibe string, segundo apellido",
-"addressCity":"recibe string, direccion",
-"document":recibe entero, 222222,
-"documentCity":"recibe string, ciudad del documento",
-"contrato":"recibe string,aquí va el contrato el cual se desea renderizar, ejemplo (contrato1.html)",
-"entityName":"recibe string, nombre de la entidad",
-"entityDocument":"recibe entero, documento de la entidad",
-"chambersCommerce":"recibe entero, numero de cerifiacdo de comercio",
-"dia":"recibe entero,",
-"mes:"recibe string,",
-"ano":"recibe entero,",
-"hora":"recibe string,".
+
+{ 
+        "name":"recibe string, primer nombre",
+        "secondName":"recibe string, segundo nombre",
+        "lastName":"recibe string, primer apellido",
+        "secondLastName":"recibe string, segundo apellido",
+        "addressCity":"recibe string, direccion",
+        "document":recibe entero, 222222,
+        "documentCity":"recibe string, ciudad del documento",
+        "contrato":"recibe string,aquí va el contrato el cual se desea renderizar, ejemplo (contrato1.html)",
+        "entityName":"recibe string, nombre de la entidad",
+        "entityDocument":"recibe entero, documento de la entidad",
+        "chambersCommerce":"recibe entero, numero de cerifiacdo de comercio",
+        "dia":"recibe entero,",
+        "mes:"recibe string,",
+        "ano":"recibe entero,",
+        "hora":"recibe string"
 }
-*
+
+NOTA: si la plantilla a renderizar no contiene las variables que se le envían, estos no serán renderizados, así se envíen, se puede enviar estos parámetros vacíos si prefiere.
  ----------------------------------------------------------------------------------------------------------------------------------
 - EJEMPLO DE PTECIÓN A POST http://127.0.0.1:5000/ver_contrato
 { 
