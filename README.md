@@ -87,16 +87,16 @@ para realizar peticiones, abrir postman y seleccionar POST y en la URL poner la 
         "lastName":"recibe string, primer apellido",
         "secondLastName":"recibe string, segundo apellido",
         "addressCity":"recibe string, direccion",
-        "document":recibe entero, 222222,
+        "document":recibeEntero,
         "documentCity":"recibe string, ciudad del documento",
         "contrato":"recibe string,aquí va el contrato el cual se desea renderizar, ejemplo (contrato1.html)",
         "entityName":"recibe string, nombre de la entidad",
         "entityDocument":"recibe entero, documento de la entidad",
         "chambersCommerce":"recibe entero, numero de cerifiacdo de comercio",
-        "dia":"recibe_entero",
-        "mes:"recibe string",
-        "ano":"recibe_entero",
-        "hora":"recibe_string"
+        "dia":"recibeEntero",
+        "mes:"recibeString",
+        "ano":"recibeEntero",
+        "hora":"recibeString"
 }
 
 ```
