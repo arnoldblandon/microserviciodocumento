@@ -3,10 +3,10 @@ README
 ----------------------------------------------------------------------------------------------------------------------------------
 
 FUNCIONAMIENTO
-- Este microservicio expone una API, esta API recibe parametros vía POST, y de acuerdo a estos, renderiza plantillas html, de acuerdo a la URL en ejecución puede guardar la plantilla en el storage de AZURE, retornar la URL para descargar dicha plantilla, o simplemente renderizrla.
+- Este microservicio expone una API, esta API recibe parametros vía POST, y de acuerdo a estos los renderiza en una plantilla. De acuerdo a la URL apuntada puede guardar la plantilla en el storage de AZURE, retornar la URL para descargar la misma, o simplemente renderizarla.
 ----------------------------------------------------------------------------------------------------------------------------------
 DEPENDENCIAS
-- Para su correcto funcionamiento, el microservicio requiere las siguientes depencias:
+- Para su correcto funcionamiento, el microservicio requiere las siguientes dependencias:
 - Python 3.5.2
 - AZURE (para almecenar plantilla en azure storage)
 - udd (generador de nombres aleatorios, libreria de python)
