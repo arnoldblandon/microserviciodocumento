@@ -99,8 +99,7 @@ para realizar peticiones, abrir postman y seleccionar POST y en la URL poner la 
 }
 *
  ----------------------------------------------------------------------------------------------------------------------------------
-EJEMPLO DE PTECIÓN A
-POST http://127.0.0.1:5000/ver_contrato
+- EJEMPLO DE PTECIÓN A POST http://127.0.0.1:5000/ver_contrato
 { 
 	"name":"ESTEBAN",
 	"secondName":"SAMUEL",
@@ -118,6 +117,16 @@ POST http://127.0.0.1:5000/ver_contrato
 	"ano":2017,
 	"hora":"2 AM"
 }
+
+-PETICIONES A http://127.0.0.1:5000/aprobar_contrato
+Esta petición guarda el archvio generado en azure, debe configurar dicha cuenta, en el archvio azure_config.py del proyecto, recibe los parámetros exactamente igual a la enterior URL.
+
+ ----------------------------------------------------------------------------------------------------------------------------------
+- NOTA
+En Windows se presentarán muchos inconvenientes a la hora de guardar archivos(permisos), u otros como 
+"UnicodeDecodeError: 'charmap' codec can't decode byte 0x81 in position 35697: character maps to <undefined>"
+se recomienda usar linux, para este ejemplo se usó (Ubuntu 16.4)
+
 
 
 
