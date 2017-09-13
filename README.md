@@ -80,6 +80,7 @@ para realizar peticiones, abrir postman y seleccionar POST y en la URL poner la 
 
 - ir a body, seleccionar "raw" y donde dice "text" seleccionar JSON(application/json), y pegar los siguientes parámetros..
 
+```json
 { 
         "name":"recibe string, primer nombre",
         "secondName":"recibe string, segundo nombre",
@@ -98,6 +99,7 @@ para realizar peticiones, abrir postman y seleccionar POST y en la URL poner la 
         "hora":"recibe string"
 }
 
+```
 NOTA: si la plantilla a renderizar no contiene las variables que se le envían, estos no serán renderizados, así se envíen, se puede enviar estos parámetros vacíos si prefiere.
  ----------------------------------------------------------------------------------------------------------------------------------
 - EJEMPLO DE PTECIÓN A POST http://127.0.0.1:5000/ver_contrato
